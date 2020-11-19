@@ -5,11 +5,11 @@ import {connect} from 'react-redux';
 import {getAdmin} from '../../redux/reducer';
 
 function Admin(props) {
-    const [email, setEmail] = useState("")
+    const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     
     const login = () => {
-        axios.post('/auth/login', {email, password})
+        axios.post('/auth/login', {username, password})
         .then((res) => {
             props.getAdmin(res.data);
             props.history.push('/admin/dashboard')
@@ -25,11 +25,11 @@ function Admin(props) {
             <Container>
                 <Form>
                     <Form.Group>
-                        <Form.Label>Email Address</Form.Label>
-                        <Form.Control value={email} 
-                        onChange={e => setEmail(e.target.value)} 
-                        type="email" 
-                        placeholder="Email"/>
+                        <Form.Label>Username</Form.Label>
+                        <Form.Control value={username} 
+                        onChange={e => setUsername(e.target.value)} 
+                        type="text" 
+                        placeholder="Username"/>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Password</Form.Label>

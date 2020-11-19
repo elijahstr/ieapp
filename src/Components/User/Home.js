@@ -9,8 +9,6 @@ function Home() {
     const [exp, setExp] = useState([]),
     [course, setCourse] = useState([]);
 
-    const [posts, setPosts] = useState([]);
-
     useEffect(() => {
         let stopCall = false;
         if(!stopCall){

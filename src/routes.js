@@ -7,6 +7,7 @@ import IE290 from './Components/User/Coursework/IE290';
 import Fahr from './Components/User/Experiences/Fahr';
 import Admin from './Components/Admin/Admin';
 import Dashboard from './Components/Admin/Dashboard';
+import CourseCard from './Components/CourseCard'
 
 export default (
     <Switch>
@@ -17,5 +18,6 @@ export default (
        <Route path = '/experiences/fahr' component={Fahr}/>
        <Route exact path = '/admin' component={Admin}/> 
        <Route path = '/admin/dashboard' component={Dashboard}/>
+       <Route path = '/admin/coursecard' component={CourseCard}/>
     </Switch>
 )
