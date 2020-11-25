@@ -45,7 +45,7 @@ app.post('/auth/logout', adminCtrl.logout);
 
 app.post('/api/email', emailCtrl.email);
 
-app.use(express.static(__dirname + '../build'))
+app.use(express.static(__dirname + '/../build'))
 app.get('*', (req, res) =>{
     res.sendFile(path.join(__dirname, '../build/index.html'))
 })
