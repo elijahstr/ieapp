@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import {Container, Image, Card} from 'react-bootstrap'
 import header from '../../Images/spaceHeader.jpg'
+import HomeCarousel from './HomeCarousel';
+import HeaderVideo from './HeaderVideo';
 import '../../styles/Home.css'
 import axios from 'axios';
 
@@ -9,29 +11,29 @@ function Home() {
     const [exp, setExp] = useState([]),
     [course, setCourse] = useState([]);
 
-    useEffect(() => {
-        let stopCall = false;
-        if(!stopCall){
-            axios.get('/api/experiences')
-            .then(res => {
-                setExp(res.data)
-            });
-        }
+  //   useEffect(() => {
+  //       let stopCall = false;
+  //       if(!stopCall){
+  //           axios.get('/api/experiences')
+  //           .then(res => {
+  //               setExp(res.data)
+  //           });
+  //       }
 
-        return () => stopCall = true;
-    });
+  //       return () => stopCall = true;
+  //   });
 
-    useEffect(() => {
-      let stopCall = false;
-      if(!stopCall){
-          axios.get('/api/coursework')
-          .then(res => {
-              setCourse(res.data)
-          });
-      }
+  //   useEffect(() => {
+  //     let stopCall = false;
+  //     if(!stopCall){
+  //         axios.get('/api/coursework')
+  //         .then(res => {
+  //             setCourse(res.data)
+  //         });
+  //     }
 
-      return () => stopCall = true;
-  });
+  //     return () => stopCall = true;
+  // });
 
     const mappedExp = exp.map((data, i) => (
         <div key={i}>
@@ -61,17 +63,19 @@ function Home() {
 
 
     return (
-        <div>
-            <Image className='header-image' src={header} fluid/>
-            <Container fluid>
-                <h1 className='text-center'>Building Better Worlds</h1>
-            </Container>
-            <Container>
+        <div className='home-class'>
+            {/* <Image className='header-image' src={header} fluid/> */}
+            <HeaderVideo/>
+            {/* <Container>
               {mappedExp}
               {mappedCourse}
-            </Container>
-           
-            
+            </Container> */}
+              <HomeCarousel/>
+            <Container>
+              <footer className='text-center'>
+                <a style={{color:'grey'}}href='/contact'>Contact Me</a>
+              </footer>
+            </Container>     
         </div>
     )
 }

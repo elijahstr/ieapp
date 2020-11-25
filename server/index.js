@@ -4,7 +4,8 @@ const express = require('express');
 const session = require('express-session');
 const massive = require('massive');
 const ctrl = require('./controller');
-const adminCtrl = require('./adminController')
+const adminCtrl = require('./adminController');
+const emailCtrl = require('./emailController');
 const path = require('path');
 const app = express();
 app.use(express.json());
@@ -41,6 +42,8 @@ app.delete('/api/course/:id', ctrl.deleteCourse)
 app.post('/auth/login', adminCtrl.login)
 app.post('/auth/register', adminCtrl.newAdmin);
 app.post('/auth/logout', adminCtrl.logout);
+
+app.post('/api/email', emailCtrl.email);
 
 
 

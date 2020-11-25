@@ -1,0 +1,15 @@
+#container-style{
+    padding-left: auto;
+    /* padding-bottom: 50px; */
+}
+
+#card-style{
+    width: auto;
+    background-color: rgb(168, 168, 168);
+}
+
+#carousel{
+    width: auto;   
+}
+
+.carousel-indicators li { visibility: hidden; }

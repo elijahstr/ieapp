@@ -10,7 +10,7 @@ function IE352() {
            </Container>
             <Container>
                 <h3>Description:</h3>
-                <p></p>
+                <p>Strategies for Innovation and Entrepreneurship is the Keystone class in the I&E Certificate...</p>
             </Container> 
             <Container>
                 <h3>Reflection:</h3>

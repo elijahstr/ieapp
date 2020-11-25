@@ -8,11 +8,15 @@ import Fahr from './Components/User/Experiences/Fahr';
 import Admin from './Components/Admin/Admin';
 import Dashboard from './Components/Admin/Dashboard';
 import CourseCard from './Components/CourseCard'
+import Contact from './Components/User/Contact'
+import EmailForm from './Components/User/EmailForm'
 
 export default (
     <Switch>
        <Route exact path = '/' component={Home}/> 
        <Route path = '/about' component={About}/>
+       <Route path = '/contact' component={Contact}/>
+       {/* <Route path = '/email' component={EmailForm}/> */}
        <Route path = '/coursework/352' component={IE352}/> 
        <Route path = '/coursework/290' component={IE290}/> 
        <Route path = '/experiences/fahr' component={Fahr}/>

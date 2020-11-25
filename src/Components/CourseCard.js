@@ -11,8 +11,7 @@ function CourseCard(props) {
     useEffect(() => {
         let stopCall = false;
         if(!stopCall){
-            axios.get(`/api/course/1`)
-            //CHANGE 1 to PROPS WHEN DONE
+            axios.get(`/api/course/5`)
             .then(res => {
                 setPost(res.data[0]);
             });
@@ -23,7 +22,22 @@ function CourseCard(props) {
     useEffect(()=>{
         setTitle(post.title)
         setDesc(post.description)
-    }, [post.title, post.description])
+    }, [post.title, post.description]);
+
+    const deleteCourse = () => {
+        axios.delete(`/api/course/${post.course_id}`)
+        .then(()=>props.history.push('/admin/dashboard'))
+    }
+
+    const editCourse = () => {
+        axios.put(`/api/course/${post.course_id}`, {title, desc})
+        .then(()=>{
+            setEdit(false)
+            axios.get(`api/post/1`)
+            .then(res => setPost(res.data[0]))
+        })
+    }
+
 
     return (
         <div>
@@ -46,8 +60,8 @@ function CourseCard(props) {
                         type='text'
                         />
                     </Form.Group>
-                    <Button onClick={() => setEdit(false)}>Update</Button>
-                    <Button>Delete</Button>
+                    <Button onClick={() => editCourse()}>Update</Button>
+                    <Button onClick={() => deleteCourse()}>Delete</Button>
                 </Form>
             </Container> 
             : 

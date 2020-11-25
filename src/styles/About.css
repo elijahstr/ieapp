@@ -1,0 +1,21 @@
+/* body,html{
+    margin:0;
+    width:100%;
+  }
+  html{
+      background-color: rgb(171, 171, 171);
+  }
+
+#big-container{
+    background-color: grey;
+    width:100%
+}
+
+#title-container{
+    background-color: white;
+    margin-bottom:0px;
+}
+
+#smaller-container{
+    background-color: white;
+} */
