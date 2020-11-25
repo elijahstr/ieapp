@@ -1,10 +1,19 @@
 #container-style{
-    padding-left: auto;
+    margin-left: 20%;
     /* padding-bottom: 50px; */
 }
 
+#car-title{
+    color:white;
+}
+
 #card-style{
-    width: auto;
+    width: 60%;
+    height: 60%;
+    background-color: rgb(226, 226, 226);
+}
+
+#about-card-style{
     background-color: rgb(226, 226, 226);
 }
 
