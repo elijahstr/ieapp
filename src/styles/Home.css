@@ -1,5 +1,8 @@
 .home-class{
     background-color: #343d52
     
-    ;
+}
+
+footer{
+    justify-content: space-between;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import {Container, Image, Card, Carousel} from 'react-bootstrap'
-import '../../styles/Carousel.css'
+import {Container, Card, Carousel} from 'react-bootstrap'
+import '../../../styles/Carousel.css'
 
 function HomeCarousel() {
     return (

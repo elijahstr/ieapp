@@ -1,6 +1,6 @@
 import React from 'react';
-import video from '../../Images/Saint_Barthelemy_2.mov'
-import classes from './HeaderVideo.module.css';
+import video from '../../../Images/Saint_Barthelemy_2.mov'
+import classes from '../../../styles/HeaderVideo.module.css'
 
 const HeaderVideo = () => {
     const videoSource = video
