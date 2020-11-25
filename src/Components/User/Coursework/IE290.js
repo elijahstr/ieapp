@@ -10,7 +10,7 @@ function IE290() {
            </Container>
             <Container>
                 <h3>Description:</h3>
-                <p>Founder’s Workshop, in short, is a class that helps students learn the necessary skills to take their ideas and turn them into real life startups.  The class consisted of two primary components: learning about key elements of entrepreneurship, and then incorporating those same elements into a series of pitch presentations.  The presentations were pitches of real startup ideas created by students in the course, and by pitching these ideas students were able to get feedback from peers and the professors on their ideas.</p>
+                <p>Founder’s Workshop is a class that helps students learn the necessary skills to take their ideas and turn them into real life startups.  The class consisted of two primary components: learning about key elements of entrepreneurship, and then incorporating those same elements into a series of pitch presentations.  The presentations were pitches of real startup ideas created by students in the course, and by pitching these ideas students were able to get feedback from peers and the professors on their ideas.</p>
             </Container> 
             <Container>
                 <h3>Reflection:</h3>
