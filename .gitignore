@@ -12,7 +12,7 @@
 /build
 
 # misc
-/src/Images
+# /src/Images
 .env
 .DS_Store
 .env.local
