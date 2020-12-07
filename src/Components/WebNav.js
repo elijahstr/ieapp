@@ -14,9 +14,9 @@ function WebNav() {
                         <NavDropdown id='nav-link' title="Experiences">
                             <NavDropdown.Item>Coming soon!</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Coursework" id='nav-link'>
+                        <NavDropdown title="Coursework" id='nav-link' style={{marginRight: '20px'}}>
                             <NavDropdown.Item id='dropdown-item' href="/coursework/290">I&E 290</NavDropdown.Item>
-                            <NavDropdown.Item href="/coursework/352">I&E 352</NavDropdown.Item>
+                            {/* <NavDropdown.Item href="/coursework/352">I&E 352</NavDropdown.Item> */}
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

@@ -20,7 +20,7 @@ function HomeCarousel() {
               </Card>
               </Container>
             </Carousel.Item>
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <Container id='container-style'>
               <Card id='card-style'>
                 <Card.Body as='a' href='/coursework/352' style={{color: "black"}}>
@@ -29,7 +29,7 @@ function HomeCarousel() {
                 </Card.Body>
               </Card>
               </Container>
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel> 
         </Container>
       </div>

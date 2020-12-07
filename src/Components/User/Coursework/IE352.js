@@ -1,9 +1,13 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import image from '../../../Images/keyImage.jpg'
+import { Container, Image } from 'react-bootstrap'
 
 function IE352() {
     return (
         <div>
+            <Container style={{marginTop: '5px'}}>
+                <Image src={image} alt='key' fluid/>
+            </Container>
            <Container className='text-center'>
                 <h1>Innovation & Entrepreneurship</h1>
                 <h2>I&E 352</h2>

@@ -1,9 +1,13 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import image from '../../../Images/startupImage.jpg'
+import { Container, Image } from 'react-bootstrap'
 
 function IE290() {
     return (
         <div>
+            <Container style={{marginTop: '5px'}}>
+                <Image src={image} alt='startup' fluid/>
+            </Container>
             <Container className='text-center'>
                 <h1>Founder's Workshop</h1>
                 <h2>I&E 290</h2>
