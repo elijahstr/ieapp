@@ -30,18 +30,8 @@ function HomeCarousel() {
               </Card>
               </Container>
             </Carousel.Item>
-            <Carousel.Item>
-              <Container id='container-style'>
-              <Card id='card-style'>
-                <Card.Body as='a' href='/experiences/fahr' style={{color: "black"}}>
-                  <Card.Title>FAHR</Card.Title>
-                  <Card.Text>FAHR is a nonprofit organization based in Salt Lake City, Utah, aiming to raise student and parent engagement...</Card.Text>
-                </Card.Body>
-              </Card>
-              </Container>
-            </Carousel.Item>
           </Carousel> 
-          </Container>
+        </Container>
       </div>
     )
 }

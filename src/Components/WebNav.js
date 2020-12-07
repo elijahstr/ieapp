@@ -12,7 +12,7 @@ function WebNav() {
                         <Nav.Link id='nav-link' href="/">Home</Nav.Link>
                         <Nav.Link id='nav-link' href="/about">About Me</Nav.Link>
                         <NavDropdown id='nav-link' title="Experiences">
-                            <NavDropdown.Item href="/experiences/fahr">FAHR</NavDropdown.Item>
+                            <NavDropdown.Item>Coming soon!</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Coursework" id='nav-link'>
                             <NavDropdown.Item id='dropdown-item' href="/coursework/290">I&E 290</NavDropdown.Item>
